@@ -1,0 +1,11 @@
+.proposal {
+  background: linear-gradient(84.6deg, #4dc274 2.25%, #bee8cc 131.25%);
+  border-radius: 30px;
+  padding: 64px 32px;
+}
+
+@media (min-width: 1280px) {
+  padding: 64px;
+  margin-left: -64px;
+  margin-right: -64px;
+}

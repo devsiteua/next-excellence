@@ -1,0 +1,11 @@
+.hero {
+  border-radius: 30px;
+  padding: 64px 32px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+@media (min-width: 1280px) {
+  margin-left: -64px;
+  margin-right: -64px;
+  padding: 164px 64px;
+}
