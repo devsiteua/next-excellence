@@ -1,3 +1,38 @@
 <header class="header">
-  <div class="container container--header">HEADER</div>
+  <div class="container container--header">
+    <a
+      class="header-logo"
+      href="/"
+      aria-label="English Excellence home"
+    >
+      english<span class="header-logo-accent">excellence.</span>
+    </a>
+
+    <nav class="header-nav" aria-label="Primary navigation">
+      <ul class="header-nav-list">
+        <li><a class="header-nav-link" href="#about">About us</a></li>
+        <li><a class="header-nav-link" href="#lessons">Our lessons</a></li>
+        <li><a class="header-nav-link" href="#teachers">Teachers</a></li>
+        <li><a class="header-nav-link" href="#reviews">Reviews</a></li>
+        <li><a class="header-nav-link" href="#contact">Contact us</a></li>
+      </ul>
+    </nav>
+
+    <ul class="socials socials--header header-socials">
+      <load src="partials/socials.html" />
+    </ul>
+
+    <button
+      class="header-menu-button"
+      type="button"
+      aria-label="Open navigation menu"
+      aria-controls="mobile-menu"
+      aria-expanded="false"
+      data-menu-open
+    >
+      <svg class="header-menu-icon" width="32" height="32" aria-hidden="true">
+        <use href="./img/sprite.svg#menu-btn"></use>
+      </svg>
+    </button>
+  </div>
 </header>

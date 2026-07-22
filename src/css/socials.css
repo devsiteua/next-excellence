@@ -9,8 +9,8 @@
   justify-content: center;
   border: 1px solid transparent;
   border-radius: 10px;
-  width: 44px;
-  height: 44px;
+  width: 42px;
+  height: 42px;
   transition:
     border-color var(--transition),
     background-color var(--transition);
@@ -29,6 +29,8 @@
 }
 
 .social-icon {
+  width: 26px;
+  height: 26px;
   fill: currentColor;
   transition: fill var(--transition);
 }
@@ -43,6 +45,18 @@
 
 .socials--mobile .social-icon {
   fill: var(--white);
+}
+
+@media (min-width: 768px) {
+  .social-link {
+    width: 44px;
+    height: 44px;
+  }
+
+  .social-icon {
+    width: 28px;
+    height: 28px;
+  }
 }
 
 @media (hover: hover) {
