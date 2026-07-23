@@ -76,7 +76,7 @@
   transition: color var(--transition);
 }
 
-.mobile-menu-socials {
+.mobile-menu > .socials--mobile {
   align-self: center;
 }
 
