@@ -24,7 +24,7 @@
 }
 
 .header-nav,
-.header .socials--header {
+.socials--header {
   display: none;
 }
 
@@ -105,7 +105,7 @@
     transition: transform var(--transition);
   }
 
-  .header .socials--header {
+  .socials--header {
     display: flex;
   }
 
