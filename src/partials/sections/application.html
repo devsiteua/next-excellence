@@ -7,5 +7,146 @@
       Please use the form below to contact us. Enter your name, email, and
       message and we'll get back to you shortly.
     </p>
+
+    <div class="application-main">
+      <div class="application-banner">
+        <picture>
+          <source
+            srcset="
+              img/application/girl@1x.webp 1x,
+              img/application/girl@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <img
+            src="img/application/girl@1x.png"
+            srcset="
+              img/application/girl@1x.png 1x,
+              img/application/girl@2x.png 2x
+            "
+            width="492"
+            height="392"
+            alt="Girl studying English online"
+            loading="lazy"
+          />
+        </picture>
+        <div class="application-banner-content">
+          <p class="application-banner-counter">1000</p>
+          <p class="application-banner-text">
+            of our online English language lessons! This journey has been full
+            of discovery, growth and unforgettable moments, and we are happy to
+            share this joyful event with you.
+          </p>
+        </div>
+      </div>
+
+      <form class="application-form" action="#" method="post">
+        <label class="application-field">
+          <span class="visually-hidden">Name</span>
+          <input
+            class="application-control"
+            type="text"
+            name="name"
+            placeholder="Name"
+            autocomplete="name"
+            pattern="[A-Za-zА-Яа-яЄєІіЇїҐґ][A-Za-zА-Яа-яЄєІіЇїҐґ'’\-\s]{1,49}"
+            title="Name must contain 2 to 50 letters"
+            required
+          />
+        </label>
+
+        <label class="application-field">
+          <span class="visually-hidden">Email</span>
+          <input
+            class="application-control"
+            type="email"
+            name="email"
+            placeholder="Email"
+            autocomplete="email"
+            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+            title="Enter a valid email address, e.g. name@example.com"
+            required
+          />
+        </label>
+
+        <label class="application-field">
+          <span class="visually-hidden">Phone</span>
+          <input
+            class="application-control"
+            type="tel"
+            name="phone"
+            placeholder="Phone"
+            autocomplete="tel"
+            pattern="\+?[0-9\s\-\(\)]{10,18}"
+            title="Enter a valid phone number, e.g. +380 67 123 4567 or 0671234567"
+            required
+          />
+        </label>
+
+        <label class="application-field">
+          <span class="visually-hidden">Comment</span>
+          <textarea
+            class="application-control application-control--textarea"
+            name="comment"
+            placeholder="Comment"
+          ></textarea>
+        </label>
+
+        <fieldset class="application-teachers">
+          <legend class="application-teachers-title">Choose a teacher</legend>
+
+          <div class="application-teachers-list">
+            <label class="application-teacher">
+              <input
+                class="application-teacher-radio"
+                type="radio"
+                name="teacher"
+                value="maria"
+                checked
+              />
+              <span class="application-teacher-name">Maria</span>
+            </label>
+
+            <label class="application-teacher">
+              <input
+                class="application-teacher-radio"
+                type="radio"
+                name="teacher"
+                value="artem"
+              />
+              <span class="application-teacher-name">Artem</span>
+            </label>
+
+            <label class="application-teacher">
+              <input
+                class="application-teacher-radio"
+                type="radio"
+                name="teacher"
+                value="ilona"
+              />
+              <span class="application-teacher-name">Ilona</span>
+            </label>
+
+            <label class="application-teacher">
+              <input
+                class="application-teacher-radio"
+                type="radio"
+                name="teacher"
+                value="volodymyr"
+              />
+              <span class="application-teacher-name">Volodymyr</span>
+            </label>
+          </div>
+        </fieldset>
+
+        <button class="button application-button" type="submit">Send</button>
+
+        <p class="application-policy">
+          By clicking on “Send” button, you agree to our
+          <a class="application-policy-link" href="#">Privacy Policy</a>, and
+          allow Promodo to use this information for marketing purposes.
+        </p>
+      </form>
+    </div>
   </div>
 </section>
