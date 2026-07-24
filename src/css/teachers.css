@@ -4,9 +4,13 @@
   gap: 40px;
 }
 
+.teacher-thumb {
+  display: block;
+  margin-bottom: 16px;
+}
+
 .teacher-img {
   margin: 0 auto;
-  margin-bottom: 16px;
   border-radius: 50%;
 }
 
@@ -37,7 +41,7 @@
     padding: 0 64px;
   }
 
-  .teachers-item {
+  .teacher-card {
     max-width: calc((100% - 32px) / 2);
   }
 
@@ -48,11 +52,10 @@
 
 @media screen and (min-width: 1280px) {
   .teachers-list {
-    flex-wrap: nowrap;
     padding: 0;
   }
 
-  .teachers-item {
+  .teacher-card {
     max-width: calc((100% - 32px * 3) / 4);
   }
 }
