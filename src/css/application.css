@@ -1,2 +1,236 @@
-.application {
+.application-banner {
+  display: none;
+}
+
+.application-field {
+  display: block;
+  margin-bottom: 18px;
+}
+
+.application-control {
+  display: block;
+  padding: 15px 17px;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(18, 20, 23, 0.1);
+  border-radius: 12px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571429;
+  color: var(--black);
+  transition: border-color var(--transition);
+}
+
+.application-control--textarea {
+  height: 94px;
+  resize: none;
+}
+
+.application-control::placeholder {
+  color: var(--black);
+  opacity: 1;
+}
+
+.application-control:focus {
+  outline: none;
+  border-color: var(--green);
+}
+
+.application-teachers {
+  display: block;
+  margin: 20px 0 40px 0;
+  border: none;
+  padding: 0;
+}
+
+.application-teachers-title {
+  display: block;
+  margin-bottom: 14px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: var(--black);
+}
+
+.application-teachers-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.application-teacher-radio {
+  opacity: 0;
+  position: absolute;
+}
+
+.application-teacher-name {
+  display: block;
+  position: relative;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: var(--black);
+  padding-left: 28px;
+}
+
+.application-teacher-name::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(18, 20, 23, 0.2);
+  border-radius: 50%;
+  transition: border-color var(--transition);
+}
+
+.application-teacher-name::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: var(--green);
+  border-radius: 50%;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity var(--transition),
+    visibility var(--transition);
+}
+
+.application-teacher-radio:checked + .application-teacher-name::before {
+  border-color: var(--green);
+}
+
+.application-teacher-radio:checked + .application-teacher-name::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.application-teacher-radio:focus-visible + .application-teacher-name::before {
+  outline: 1px solid var(--green);
+  outline-offset: 2px;
+}
+
+.application-button {
+  display: block;
+  width: 100%;
+}
+
+.application-policy {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--color-text-muted);
+  margin-top: 16px;
+}
+
+.application-policy-link {
+  color: var(--color-text-muted);
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .application-form {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .application-control {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .application-control--textarea {
+    height: 104px;
+  }
+
+  .application-teachers {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .application-teachers-title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 16px;
+  }
+
+  .application-teachers-list {
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .application-teacher-name {
+    font-size: 18px;
+  }
+
+  .application-teacher-name::before {
+    width: 20px;
+    height: 20px;
+  }
+
+  .application-teacher-name::after {
+    left: 5px;
+  }
+
+  .application-policy {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .application-main {
+    display: flex;
+    gap: 32px;
+  }
+
+  .application-banner {
+    display: block;
+    width: 492px;
+    overflow: hidden;
+    background: var(--green);
+    border-radius: 30px;
+  }
+
+  .application-banner-content {
+    padding: 20px;
+  }
+
+  .application-banner-counter {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: var(--white);
+    margin-bottom: 8px;
+  }
+
+  .application-banner-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .application-form {
+    width: 500px;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
