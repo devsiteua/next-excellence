@@ -6,8 +6,9 @@
     <symbol id="close-btn" viewBox="0 0 32 32">
       <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="4" stroke-width="2.4" d="M24 8 8 24M8 8l16 16" style="stroke:var(--color1, #fff)"/>
     </symbol>
-    <symbol id="check" viewBox="0 0 32 32">
-      <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="4" stroke-width="3.2" d="M26.667 8 12 22.667 5.333 16" style="stroke:var(--color1, #fff)"/>
+    <symbol id="check" viewBox="0 0 28 28" fill="none">
+      <circle cx="14" cy="14" r="14" fill="#4DC274"/>
+      <path d="M20.6667 9L11.5 18.1667L7.33334 14" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
     <symbol id="instagram" viewBox="0 0 32 32">
       <path d="M28.718 10.756a9.3 9.3 0 0 0-.596-3.145 6.55 6.55 0 0 0-3.743-3.737 9.4 9.4 0 0 0-3.108-.596c-1.368-.061-1.801-.078-5.273-.078s-3.916 0-5.274.078a9.4 9.4 0 0 0-3.106.596 6.54 6.54 0 0 0-3.743 3.737 9.3 9.3 0 0 0-.596 3.101c-.061 1.367-.08 1.8-.08 5.265s0 3.909.08 5.265a9.3 9.3 0 0 0 .596 3.104 6.55 6.55 0 0 0 3.744 3.735 9.4 9.4 0 0 0 3.106.639c1.369.061 1.803.08 5.274.08s3.917 0 5.274-.08a9.4 9.4 0 0 0 3.108-.595 6.56 6.56 0 0 0 3.743-3.737 9.4 9.4 0 0 0 .596-3.104c.061-1.365.08-1.798.08-5.265-.003-3.466-.003-3.906-.082-5.264zM15.99 22.531c-3.631 0-6.572-2.936-6.572-6.561s2.941-6.561 6.572-6.561c3.628 0 6.572 2.936 6.572 6.561s-2.944 6.561-6.572 6.561m6.834-11.835a1.53 1.53 0 1 1 0-3.06 1.53 1.53 0 1 1 0 3.06"/>
