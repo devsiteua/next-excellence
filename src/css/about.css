@@ -1,2 +1,80 @@
-.about {
+.about-row {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-list {
+  counter-reset: about-advantages;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-item {
+  counter-increment: about-advantages;
+  background-color: var(--gray);
+  border-radius: 16px;
+  padding: 32px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: var(--black);
+}
+
+.about-item::before {
+  display: block;
+  content: counter(about-advantages, decimal-leading-zero);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  color: var(--green);
+  margin-bottom: 16px;
+}
+
+.about-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  padding: 50px 40px;
+  background-color: var(--green);
+}
+
+@media (min-width: 768px) {
+  .about-row {
+    gap: 32px;
+  }
+
+  .about-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .about-item {
+    width: calc((100% - 32px) / 2);
+    border-radius: 30px;
+  }
+
+  .about-image {
+    padding: 16px;
+    border-radius: 30px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .about-row {
+    flex-direction: row;
+  }
+
+  .about-list {
+    width: 682px;
+  }
+
+  .about-image {
+    width: 310px;
+  }
 }
