@@ -12,9 +12,6 @@
   padding: 40px 20px;
   display: flex;
   flex-direction: column;
-  transition:
-    transform var(--transition),
-    box-shadow var(--transition);
 }
 
 .lesson-card--accent {
