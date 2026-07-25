@@ -1,11 +1,194 @@
 .proposal {
   background: linear-gradient(84.6deg, #4dc274 2.25%, #bee8cc 131.25%);
-  border-radius: 30px;
-  padding: 64px 32px;
+  border-radius: 16px;
+  padding: 40px 20px 64px 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  isolation: isolate;
+  position: relative;
+  overflow: hidden;
+}
+
+.proposal-slogan {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 40px;
+  color: var(--white);
+  margin-bottom: 65px;
+}
+
+.proposal-slogan-accent {
+  color: var(--accent-green);
+}
+
+.proposal-card {
+  background: #FFFFFF;
+  border-radius: 16px;
+  padding: 40px 20px;
+  position: relative;
+}
+
+.proposal-card::before,
+.proposal-card::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+  inset: 0;
+  border-radius: 16px;
+}
+
+.proposal-card::before {
+  transform: rotate(-9deg);
+  background-color: var(--light-green);
+}
+
+.proposal-card::after {
+  transform: rotate(11deg);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.proposal-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: var(--black);
+  margin-bottom: 20px;
+}
+
+.proposal-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.proposal-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.proposal-icon {
+  width: 20px;
+  height: 20px;
+  flex:  0 0 20px;
+}
+
+.proposal-text {
+  flex-basis: 0;
+  flex-grow: 1;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  color: var(--black);
+}
+
+.proposal-button {
+  width: 100%;
+}
+
+.proposal-picture {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .proposal {
+    border-radius: 30px;
+    padding: 64px 32px 92px 32px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    overflow: visible;
+  }
+
+  .proposal-slogan {
+    font-size: 60px;
+    line-height: 70px;
+    margin-bottom: 83px;
+  }
+
+  .proposal-card {
+    border-radius: 30px;
+    padding: 64px 185px 64px 32px;
+    margin-left: -14px;
+    margin-right: -14px;
+  }
+
+  .proposal-card::before,
+  .proposal-card::after {
+    border-radius: 30px;
+  }
+
+  .proposal-title {
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 32px;
+  }
+
+  .proposal-list {
+    margin-bottom: 32px;
+  }
+
+  .proposal-item {
+    gap: 16px;
+  }
+
+  .proposal-icon {
+    width: 28px;
+    height: 28px;
+    flex-basis: 28px;
+  }
+
+  .proposal-text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .proposal-button {
+    max-width: 306px;
+  }
+
+  .proposal-picture {
+    display: block;
+    position: absolute;
+    right: -49px;
+    bottom: 63px;
+  }
 }
 
 @media (min-width: 1280px) {
-  padding: 64px;
-  margin-left: -64px;
-  margin-right: -64px;
+  .proposal {
+    padding: 64px 64px 142px 64px;
+    margin: 75px -64px;
+  }
+
+  .proposal-slogan {
+    margin-bottom: 132px;
+    max-width: 776px;
+  }
+
+  .proposal-card {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 64px 306px 64px 64px;
+  }
+
+  .proposal-card::before {
+    transform: rotate(-8deg);
+  }
+
+  .proposal-title {
+    margin-bottom: 40px;
+  }
+
+  .proposal-list {
+    margin-bottom: 40px;
+  }
+
+  .proposal-picture {
+    right: 0;
+    bottom: 79px;
+  }
 }

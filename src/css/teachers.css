@@ -1,2 +1,61 @@
-.teachers {
+.teachers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.teacher-thumb {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.teacher-img {
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.teacher-name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--black);
+
+  margin-bottom: 8px;
+}
+
+.teacher-description {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--color-text-muted);
+}
+
+@media screen and (min-width: 768px) {
+  .teachers-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    padding: 0 64px;
+  }
+
+  .teacher-card {
+    max-width: calc((100% - 32px) / 2);
+  }
+
+  .teacher-description {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .teachers-list {
+    padding: 0;
+  }
+
+  .teacher-card {
+    max-width: calc((100% - 32px * 3) / 4);
+  }
 }
